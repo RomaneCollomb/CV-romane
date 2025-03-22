@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+header {
+    background-color: #f4a261;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+header .header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.header-text {
+    text-align: left;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+.contact {
+    margin-top: 10px;
+}
+
+.contact p {
+    margin: 5px 0;
+}
+
+.contact a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+.linkedin-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2em;
+    color: #f4a261;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.experience, .skills, .education, .interests {
+    background-color: white;
+    margin: 20px auto;
+    padding: 30px;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.job {
+    margin-bottom: 20px;
+}
+
+.job h3 {
+    font-size: 1.8em;
+    color: #333;
+}
+
+.job p.role {
+    font-size: 1.2em;
+    color: #777;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+ul li {
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
+
+/* Suppression du menu déroulant pour les compétences */
+.skills ul {
+    display: flex; /* Affiche la liste par défaut */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills ul li {
+    background-color: #f4a261;
+    color: white;
+    margin: 5px 10px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1.1em;
+}
+
+/* Section Centres d'Intérêt */
+.interests {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.interests h2 {
+    font-size: 2em;
+    color: #f4a261;
+    margin-bottom: 20px;
+}
+
+.interest-item {
+    display: inline-block;
+    width: 22%;
+    margin: 10px;
+    text-align: left;
+    vertical-align: top;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.interest-item img {
+    width: 80%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.interest-item p {
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+.timeline-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.timeline {
+    position: relative;
+    max-width: 80%;
+    margin: auto;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    background: #f4a261;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.timeline-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    position: relative;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.timeline-content:hover {
+    transform: scale(1.02);
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    left: 52%;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    left: 8%;
+}
+
+.timeline-item::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background: #f4a261;
+    border-radius: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline-content h3 {
+    margin: 0;
+    color: #333;
+}
+
+.timeline-content .role {
+    font-weight: bold;
+    color: #666;
+    margin-top: 5px;
+}
+
+.timeline-content ul {
+    padding-left: 20px;
+    text-align: left;
+}
+
+timeline-content p {
+    margin: 5px 0;
+}
